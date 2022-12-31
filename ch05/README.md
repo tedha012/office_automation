@@ -25,3 +25,14 @@ $ python resize.py <DIRECTORY> <FACTOR>
 <DIRECTORY> : 사진 저장 폴더명
 <FACTOR> : 변경할 비율
 예를 들어 30을 입력하면 30%, 150를 입력하면 150% 사이즈가 됩니다.
+
+# insta.py
+
+사진 1천 장, 인스타그램 사이즈(정사각형)으로 한 번에 변경하기
+
+실행 코드
+
+$ python insta.py <DIRECTORY> <COLOR>
+
+<DIRECTORY> : 사진 저장 폴더명
+<COLOR> : 배경 색깔 지정

@@ -10,7 +10,7 @@ print("Process Start")
 start_time = time.time()
 
 # image files numbers
-NUM_SAMPLES = 1000
+NUM_SAMPLES = 100
 
 # making a directory
 out_dir = "random_image"
@@ -19,7 +19,7 @@ if out_dir not in os.listdir():
 
 # making a random image files in a directory
 for i in range(NUM_SAMPLES):
-    name = str(time.time())[-7:] + ".png"
+    name = str(time.time())[-5:] + ".png"
     # 100 ~ 400 random 2 int numbers
     Xdim, Ydim = np.random.randint(100, 400, size=2)
     image = np.random.randint(256, size=(Xdim, Ydim, 3)).astype("uint8")
@@ -30,4 +30,4 @@ for i in range(NUM_SAMPLES):
 print("Process Done")
 
 end_time = time.time()
-print("The Job Took" + str(end_time - start_time) + "secondes.")
+print("The Job Took : " + str(end_time - start_time) + " secondes.")
